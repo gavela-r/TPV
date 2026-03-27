@@ -1,0 +1,93 @@
+*{
+  margin: 0 auto;
+  font-family: 'Courier New', Courier, monospace;
+}
+.hora{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #000;
+  color: #5ced08;
+  padding: 10px;
+
+}
+.hora p{
+  font-size: 40px;
+}
+.cuadroProductos{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.escanerProductos{
+  width: 90%;
+  background-color: #000;
+  height: 600px;
+  border: #5ced08 2px solid;
+}
+
+h1{
+  font-size: 40px;
+  color: #5ced08;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.escanerProductos p{
+  font-size: 60px;
+  color: #5ced08;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listaProductos{
+  width: 600px;
+  background-color: white;
+  height: 600px;
+  border: #5ced08 2px solid;
+  overflow-y: auto;
+}
+
+
+.numeros{
+  width: 200px;
+  height: 220px;
+  font-size: 20px; 
+  margin: 0px;
+}
+
+.oculto{
+  border: solid 2px white !important;
+  background-color: white !important;
+}
+.listaNumeros{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1px;
+  padding: 0px;
+}
+
+.listaNumeros li{
+  width: 90px;
+  font-size: 60px;
+  background-color: rgb(170, 170, 170);
+  border: #a3a3a3 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.delete{
+  width: 90px;
+  font-size: 60px;
+  background-color: rgb(170, 170, 170);
+  border: #a3a3a3 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
