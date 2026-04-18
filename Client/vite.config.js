@@ -1,11 +1,17 @@
 import { defineConfig } from 'vite'
 import react, { reactCompilerPreset } from '@vitejs/plugin-react'
-import babel from '@rolldown/plugin-babel'
+
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
-    babel({ presets: [reactCompilerPreset()] })
   ],
+  server: {
+    proxy: {
+      '/productos': 'http://localhost:3000',
+      '/tarjetas_regalos': 'http://localhost:3000',
+      '/promocionPropia': 'http://localhost:3000',
+    }
+  }
 })
